@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CO2 Emissions Comparison | kmom05</title>
+    <link rel="stylesheet" href="css/kmom05.css">
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="index.html">Me</a></li>
+            <li><a href="redovisning.html">Redovisning</a></li>
+            <li><a href="om.html">Om</a></li>
+            <li><a href="kmom02.html">Kmom02</a></li>
+            <li><a href="kmom03.html">Kmom03</a></li>
+            <li><a href="kmom04.html">Kmom04</a></li>
+            <li><a href="kmom05.html" class="active">Kmom05</a></li>
+        </ul>
+    </header>
+    <div class="maincontent">
+        
+        <div class="controls">
+            <label for="year-select">Select Year (1900-2019):</label>
+            <select id="year-select">
+                <option value="" disabled selected>Choose year</option>
+            </select>
+            
+            <button id="fetch-data">Get Data</button>
+            <button id="clear-storage">Clear Highscores</button>
+        </div>
+        
+        <div class="loading" id="loading">
+            <img src="https://upload.wikimedia.org/wikipedia/commons/b/b1/Loading_icon.gif" alt="Loading..." width="50">
+            <p>Loading data...</p>
+        </div>
+        
+        <div id="table-container"></div>
+        
+        <div class="highscore">
+            <h2>Highscore</h2>
+            <div id="highscore-display"></div>
+        </div>
+    </div>
+
+    <script type="module" src="js/kmom05.js"></script>
+</body>
+</html>

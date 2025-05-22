@@ -1,0 +1,215 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html,
+body {
+    background: #eaeaea;
+    color:#1f1f1f;
+    font-family: Arial, Helvetica, sans-serif;
+    line-height: 1.6;
+    width: 100%;
+    height: 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+}
+
+/* Navigation bar */
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #444; /* Dark gray navbar */
+    border-radius: 8px;
+}
+
+li {
+    float: left;
+}
+
+li a {
+    display: block;
+    color: #f1f1f1; /* Light gray text for links */
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+}
+
+li a:hover:not(.active) {
+    background-color: #555; /* Slightly lighter gray on hover */
+}
+
+/* Active navigation item */
+.active {
+    background-color: #ffa500; /* Orange for the active item */
+    color: #1f1f1f; /* Darker text for contrast */
+}
+
+/* Headings */
+h1, h2 {
+    margin: 1em 0;
+    color: #f1f1f1; /* Light gray for headings */
+}
+
+/* Smaller text class */
+.smaller {
+    font-size: 0.875em; /* Slightly smaller text */
+    color: #ccc; /* Subtle gray text */
+}
+
+/* Flex row layout */
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    width: 100%;
+    align-items: center;
+    justify-content: center;
+    gap: 20px; /* Added spacing between elements */
+}
+
+#box1 {
+    position: absolute; /* Gör det möjligt att styra via left/top */
+}
+
+.box {
+    position: absolute;
+    border-radius: 8px; /* Valfritt, för enhetlig design */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3); /* Lägg till skuggning */
+}
+
+.centerBox {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+.red {
+    background-color: red; /* Lämna oförändrad */
+}
+
+.size200 {
+    height: 200px;
+    width: 200px;
+}
+
+.selected {
+    outline: 2px dashed black;
+}
+
+.animateSize {
+    transition: width 1s, height 1s;
+}
+
+.circle {
+    border-radius: 50%;
+}
+
+.orange { background-color: orange; }
+.yellow { background-color: yellow; }
+.green { background-color: green; }
+.blue { background-color: blue; }
+.indigo { background-color: indigo; }
+.violet { background-color: violet; }
+
+.modal {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 1000;
+}
+
+.modal.hidden {
+    display: none;
+}
+
+.modal-content {
+    background-color: #333; /* Dark background for contrast */
+    color: white; /* White text */
+    padding: 40px 20px; /* Increased padding for more space */
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    text-align: left; /* Align text to the left for better readability */
+    width: 100%;
+    max-width: 500px;
+    min-height: 400px; /* Minimum height for the modal */
+}
+
+.modal-content h2 {
+    margin-bottom: 20px; /* Space between title and list */
+    font-size: 1.5rem; /* Slightly larger title */
+}
+.modal-content ul {
+    list-style: none;
+    padding: 0;
+}
+
+.modal-content li {
+    margin-bottom: 12px; /* Mer avstånd mellan varje tangentinstruktion */
+    font-size: 1.55rem;
+    line-height: 1.1; /* Ökar avståndet mellan linjer */
+}
+
+.modal-content li span {
+    font-weight: bold; /* Gör tangenten fetstil */
+}
+
+.modal-content button {
+    display: block;
+    margin: 20px auto 0;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background: #000;
+    color: white;
+    cursor: pointer;
+}
+
+.modal-content button:hover {
+    background: #555;
+}
+
+/* Responsive adjustments for small screens */
+@media (max-width: 768px) {
+    /* Adjust the content wrapper width */
+    .content {
+        width: 95%;
+        padding: 15px;
+    }
+
+    /* Stack navigation items vertically */
+    ul {
+        text-align: center;
+    }
+
+    li {
+        float: none;
+        display: inline-block;
+    }
+
+    li a {
+        padding: 10px 12px;
+    }
+
+    /* Stack forms vertically on small screens */
+    #form-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .form {
+        width: 150px; /* Slightly larger than before */
+        height: 150px; /* Slightly larger than before */
+    }
+}

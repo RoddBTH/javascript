@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="sv">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>kmom04</title>
+    <link rel="stylesheet" href="css/kmom04.css">
+</head>
+<body>
+    <header>
+        <ul>
+            <li><a href="index.html">Me</a></li>
+            <li><a href="redovisning.html">Redovisning</a></li>
+            <li><a href="om.html">Om</a></li>
+            <li><a href="kmom02.html">Kmom02</a></li>
+            <li><a href="kmom03.html">Kmom03</a></li>
+            <li><a href="kmom04.html" class="active">Kmom04</a></li>
+            <li><a href="kmom05.html">Kmom05</a></li>
+        </ul>
+    </header>
+    <div class="maincontent">
+        <div class="row">
+            <p>Tryck K för att se alla keyboard shortcuts!</p>
+        </div>
+    </div>
+    <div id="box1" class="box center red size200"></div>
+
+    <!-- Hjälpmodalt fönster -->
+    <div id="helpModal" class="modal hidden">
+        <div class="modal-content">
+            <h2>Keyboard Shortcuts</h2>
+            <ul>
+                <li><span>E:</span> Växla form mellan fyrkant och cirkel för markerade objekt.</li>
+                <li><span>Q:</span> Förstora markerade objekt.</li>
+                <li><span>W:</span> Förminska markerade objekt.</li>
+                <li><span>R:</span> Byt färg på markerade objekt.</li>
+                <li><span>T:</span> Kopiera markerade objekt till en slumpmässig plats.</li>
+                <li><span>Y:</span> Radera markerade objekt.</li>
+                <li><span>U:</span> Avmarkera alla objekt.</li>
+                <li><span>I:</span> Markera alla objekt.</li>
+                <li><span>P:</span> Skapa ett nytt slumpmässigt objekt.</li>
+                <li><span>Piltangenter:</span> Flytta markerade objekt.</li>
+                <li><span>K:</span> Visa denna hjälptext.</li>
+            </ul>
+            <button id="closeHelp">Close</button>
+        </div>
+    </div>
+
+    <script type="module" src="js/kmom04.js"></script>
+</body>
+</html>
+
