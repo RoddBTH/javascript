@@ -104,7 +104,7 @@
     
 
     
-    <h4 class="name" id="centerElement"><span class="type-signature"></span>centerElement<span class="signature">(element)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="clearHighscores"><span class="type-signature"></span>clearHighscores<span class="signature">()</span><span class="type-signature"></span></h4>
     
 
     
@@ -112,7 +112,90 @@
 
 
 <div class="description">
-    Uppdaterar elementets position till mitten av fönstret.
+    Clears all highscores from sessionStorage and reloads the page.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="createComparisonTable"><span class="type-signature"></span>createComparisonTable<span class="signature">(data, year)</span><span class="type-signature"> &rarr; {HTMLElement}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Creates a comparison table from the data.
 </div>
 
 
@@ -148,10 +231,15 @@
 
         <tr>
             
-                <td class="name"><code>element</code></td>
+                <td class="name"><code>data</code></td>
             
 
             <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
             
             </td>
 
@@ -159,7 +247,30 @@
 
             
 
-            <td class="description last"></td>
+            <td class="description last">Data for all countries.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>year</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The year being displayed.</td>
         </tr>
 
     
@@ -220,216 +331,28 @@
 
 
 
-
-
-
-
+<h5>Returns:</h5>
 
         
-            
-
-    
-
-    
-    <h4 class="name" id="closeHelpModal"><span class="type-signature"></span>closeHelpModal<span class="signature">()</span><span class="type-signature"></span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    Stänger hjälpmodulen.
+<div class="param-desc">
+    The created table element.
 </div>
 
 
 
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">HTMLElement</span>
 
 
-
-
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
+    </dd>
 </dl>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-            
-
     
-
-    
-    <h4 class="name" id="copyElementsToRandomPosition"><span class="type-signature"></span>copyElementsToRandomPosition<span class="signature">(elements)</span><span class="type-signature"></span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    Kopiera element till slumpmässiga positioner.
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>elements</code></td>
-            
-
-            <td class="type">
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 
 
@@ -502,133 +425,6 @@
             
 
             <td class="description last">Index för vilken form som ska skapas.</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="createRandomElement"><span class="type-signature"></span>createRandomElement<span class="signature">(template)</span><span class="type-signature"></span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    Skapa ett nytt slumpmässigt element.
-</div>
-
-
-
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>template</code></td>
-            
-
-            <td class="type">
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
         </tr>
 
     
@@ -844,6 +640,422 @@
 
 
 
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="displayHighscores"><span class="type-signature"></span>displayHighscores<span class="signature">()</span><span class="type-signature"></span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Displays the current highscores on the page.
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="fetchAllData"><span class="type-signature">(async) </span>fetchAllData<span class="signature">(year)</span><span class="type-signature"> &rarr; {Promise.&lt;object>}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Fetches CO2 data for all countries for a specific year.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>year</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">Year to fetch data for.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Returns:</h5>
+
+        
+<div class="param-desc">
+    Object containing data for all countries.
+</div>
+
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise.&lt;object></span>
+
+
+    </dd>
+</dl>
+
+    
+
+
+
+
+
+        
+            
+
+    
+
+    
+    <h4 class="name" id="fetchAndDisplayData"><span class="type-signature">(async) </span>fetchAndDisplayData<span class="signature">(selectedYear)</span><span class="type-signature"> &rarr; {Promise.&lt;void>}</span></h4>
+    
+
+    
+
+
+
+<div class="description">
+    Fetches CO2 data for selected year and displays it in a table.
+</div>
+
+
+
+
+
+
+
+
+
+    <h5>Parameters:</h5>
+    
+
+<table class="params">
+    <thead>
+    <tr>
+        
+        <th>Name</th>
+        
+
+        <th>Type</th>
+
+        
+
+        
+
+        <th class="last">Description</th>
+    </tr>
+    </thead>
+
+    <tbody>
+    
+
+        <tr>
+            
+                <td class="name"><code>selectedYear</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The year between 1900-2019 to fetch CO2 emissions data for.</td>
+        </tr>
+
+    
+    </tbody>
+</table>
+
+
+
+
+
+
+<dl class="details">
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+
+    
+</dl>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<h5>Throws:</h5>
+
+        
+
+<dl>
+    <dt>
+        <div class="param-desc">
+        If data fetching fails or no data is available.
+        </div>
+    </dt>
+    <dd></dd>
+    <dt>
+        <dl>
+            <dt>
+                Type
+            </dt>
+            <dd>
+                
+<span class="param-type">Error</span>
+
+
+            </dd>
+        </dl>
+    </dt>
+    <dd></dd>
+</dl>
+
+
+    
+
+
+<h5>Returns:</h5>
+
+        
+
+
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
+        
+<span class="param-type">Promise.&lt;void></span>
+
+
+    </dd>
+</dl>
+
+    
 
 
 
@@ -1114,7 +1326,7 @@
     
 
     
-    <h4 class="name" id="handleDoubleClick"><span class="type-signature"></span>handleDoubleClick<span class="signature">(e)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="getHighscores"><span class="type-signature"></span>getHighscores<span class="signature">()</span><span class="type-signature"> &rarr; {object}</span></h4>
     
 
     
@@ -1122,7 +1334,7 @@
 
 
 <div class="description">
-    Försvinn vid dubbelklick.
+    Retrieves the current highscores from sessionStorage.
 </div>
 
 
@@ -1131,50 +1343,6 @@
 
 
 
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
-        
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>e</code></td>
-            
-
-            <td class="type">
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last"></td>
-        </tr>
-
-    
-    </tbody>
-</table>
 
 
 
@@ -1230,161 +1398,28 @@
 
 
 
-
-
-
-
+<h5>Returns:</h5>
 
         
-            
-
-    
-
-    
-    <h4 class="name" id="resizeElement"><span class="type-signature"></span>resizeElement<span class="signature">(element, sizeChange)</span><span class="type-signature"></span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    Förändrar storlek på ett element utan att ändra dess centrumposition.
+<div class="param-desc">
+    An object containing the current highscores for Sweden, Norway, and Denmark.
 </div>
 
 
 
-
-
-
-
-
-
-    <h5>Parameters:</h5>
-    
-
-<table class="params">
-    <thead>
-    <tr>
+<dl>
+    <dt>
+        Type
+    </dt>
+    <dd>
         
-        <th>Name</th>
-        
-
-        <th>Type</th>
-
-        
-
-        
-
-        <th class="last">Description</th>
-    </tr>
-    </thead>
-
-    <tbody>
-    
-
-        <tr>
-            
-                <td class="name"><code>element</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">HTMLElement</span>
+<span class="param-type">object</span>
 
 
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">Elementet som ska ändras i storlek.</td>
-        </tr>
-
-    
-
-        <tr>
-            
-                <td class="name"><code>sizeChange</code></td>
-            
-
-            <td class="type">
-            
-                
-<span class="param-type">number</span>
-
-
-            
-            </td>
-
-            
-
-            
-
-            <td class="description last">Förändring i storlek (positiv för förstoring, negativ för förminskning).</td>
-        </tr>
-
-    
-    </tbody>
-</table>
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
+    </dd>
 </dl>
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+    
 
 
 
@@ -1406,89 +1441,6 @@
 <div class="description">
     Visar en hälsning beroende på tid på dagen.
 Hälsningen baseras på om det är före eller efter 12:00.
-</div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-<dl class="details">
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-
-    
-</dl>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-        
-            
-
-    
-
-    
-    <h4 class="name" id="showHelpModal"><span class="type-signature"></span>showHelpModal<span class="signature">()</span><span class="type-signature"></span></h4>
-    
-
-    
-
-
-
-<div class="description">
-    Hjälpmodalt fönster - Visa/dölj hjälp.
 </div>
 
 
@@ -1730,7 +1682,7 @@ genom att hämta ett djur från varje kontinent och uppdatera DOM med resultaten
     
 
     
-    <h4 class="name" id="toggleSelectedClass"><span class="type-signature"></span>toggleSelectedClass<span class="signature">(e)</span><span class="type-signature"></span></h4>
+    <h4 class="name" id="updateHighscores"><span class="type-signature"></span>updateHighscores<span class="signature">(data, year)</span><span class="type-signature"></span></h4>
     
 
     
@@ -1738,7 +1690,8 @@ genom att hämta ett djur från varje kontinent och uppdatera DOM med resultaten
 
 
 <div class="description">
-    Växla outline vid klick.
+    Updates highscores based on the current year's data.
+Awards 1 point to the country with the most metric wins for the year.
 </div>
 
 
@@ -1774,10 +1727,15 @@ genom att hämta ett djur från varje kontinent och uppdatera DOM med resultaten
 
         <tr>
             
-                <td class="name"><code>e</code></td>
+                <td class="name"><code>data</code></td>
             
 
             <td class="type">
+            
+                
+<span class="param-type">object</span>
+
+
             
             </td>
 
@@ -1785,7 +1743,30 @@ genom att hämta ett djur från varje kontinent och uppdatera DOM med resultaten
 
             
 
-            <td class="description last"></td>
+            <td class="description last">The CO2 data object containing metrics for each country.</td>
+        </tr>
+
+    
+
+        <tr>
+            
+                <td class="name"><code>year</code></td>
+            
+
+            <td class="type">
+            
+                
+<span class="param-type">number</span>
+
+
+            
+            </td>
+
+            
+
+            
+
+            <td class="description last">The year being processed (1900-2019).</td>
         </tr>
 
     
@@ -1867,13 +1848,13 @@ genom att hämta ett djur från varje kontinent och uppdatera DOM med resultaten
 </div>
 
 <nav>
-    <h2><a href="index.html">Home</a></h2><h3>Namespaces</h3><ul><li><a href="kmom02.html">kmom02</a></li><li><a href="kmom03.html">kmom03</a></li><li><a href="kmom04.html">kmom04</a></li></ul><h3>Global</h3><ul><li><a href="global.html#centerElement">centerElement</a></li><li><a href="global.html#closeHelpModal">closeHelpModal</a></li><li><a href="global.html#copyElementsToRandomPosition">copyElementsToRandomPosition</a></li><li><a href="global.html#createForm">createForm</a></li><li><a href="global.html#createRandomElement">createRandomElement</a></li><li><a href="global.html#displayDetails">displayDetails</a></li><li><a href="global.html#getFrom">getFrom</a></li><li><a href="global.html#getGreeting">getGreeting</a></li><li><a href="global.html#handleDoubleClick">handleDoubleClick</a></li><li><a href="global.html#resizeElement">resizeElement</a></li><li><a href="global.html#showGreeting">showGreeting</a></li><li><a href="global.html#showHelpModal">showHelpModal</a></li><li><a href="global.html#showRandomAnimals">showRandomAnimals</a></li><li><a href="global.html#start">start</a></li><li><a href="global.html#toggleSelectedClass">toggleSelectedClass</a></li></ul>
+    <h2><a href="index.html">Home</a></h2><h3>Modules</h3><ul><li><a href="module-keyboardEvents.html">keyboardEvents</a></li><li><a href="module-mouseEvents.html">mouseEvents</a></li></ul><h3>Namespaces</h3><ul><li><a href="kmom02.html">kmom02</a></li><li><a href="kmom03.html">kmom03</a></li><li><a href="kmom04.html">kmom04</a></li><li><a href="kmom05.html">kmom05</a></li><li><a href="kmom05.co2Data.html">co2Data</a></li><li><a href="kmom05.highscore.html">highscore</a></li></ul><h3>Global</h3><ul><li><a href="global.html#clearHighscores">clearHighscores</a></li><li><a href="global.html#createComparisonTable">createComparisonTable</a></li><li><a href="global.html#createForm">createForm</a></li><li><a href="global.html#displayDetails">displayDetails</a></li><li><a href="global.html#displayHighscores">displayHighscores</a></li><li><a href="global.html#fetchAllData">fetchAllData</a></li><li><a href="global.html#fetchAndDisplayData">fetchAndDisplayData</a></li><li><a href="global.html#getFrom">getFrom</a></li><li><a href="global.html#getGreeting">getGreeting</a></li><li><a href="global.html#getHighscores">getHighscores</a></li><li><a href="global.html#showGreeting">showGreeting</a></li><li><a href="global.html#showRandomAnimals">showRandomAnimals</a></li><li><a href="global.html#start">start</a></li><li><a href="global.html#updateHighscores">updateHighscores</a></li></ul>
 </nav>
 
 <br class="clear">
 
 <footer>
-    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.4</a> on Thu Nov 28 2024 16:26:58 GMT+0100 (Central European Standard Time)
+    Documentation generated by <a href="https://github.com/jsdoc/jsdoc">JSDoc 4.0.4</a> on Thu May 22 2025 17:53:16 GMT+0200 (Central European Summer Time)
 </footer>
 
 <script> prettyPrint(); </script>

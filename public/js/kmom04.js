@@ -12,7 +12,7 @@ import {
   resizeElement,
   copyElementsToRandomPosition,
   createRandomElement
-} from './modules/kmom04/keyboardevents.js'
+} from './modules/kmom04/keyboardEvents.js'
 
 import {
   toggleSelectedClass,
